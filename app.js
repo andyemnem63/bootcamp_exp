@@ -29,8 +29,7 @@ app.get('/api/:name', (req, res) => {
 
 app.post('/insert', (req, res) => {
     let postName = req.body.name;
-     typpostName
-    connection.query('INSERT INTO peaps(first) VALUES (' + postName + ');');
+    connection.query(`INSERT INTO peaps(first) VALUES ('${postName}');`);
 });
 
 
